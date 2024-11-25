@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/860d1325-0c9a-4e65-8397-c4a1d174be00?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/user-attachments/assets/4b57ec1f-fd08-47a3-88bd-07c4652e8ad6?raw=true" alt="CoordinatorX"/>
 </p>
 
 ## 👋 Getting started
