@@ -1,4 +1,4 @@
-# CoordinatorX
+![CoordinatorX](https://github.com/user-attachments/assets/860d1325-0c9a-4e65-8397-c4a1d174be00)
 
 ## 👋 Getting started
 
