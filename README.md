@@ -25,7 +25,7 @@ enum AppRoute: Route {
 }
 ```
 
-### 2️⃣ Create Coordinator class for handling steps.
+### 2️⃣ Create a Coordinator class for handling steps.
 
 ```swift
 final class AppCoordinator: ViewCoordinator {
@@ -63,7 +63,7 @@ final class AppCoordinator: ViewCoordinator {
 }
 ```
 
-### 3️⃣ Create Flow structure to make Coordinator working:
+### 3️⃣ Create a Flow structure to make Coordinator working:
 
 ```swift
 struct AppFlow: DefaultViewFlow {
@@ -140,8 +140,7 @@ It is to present Navigation Flow. It has identical `Transition` types as `ViewCo
     case popToRoot
     case push
 ```
-Supposing the meaning of these `Transition` is clean to everyone 🙄
 
 ## Last but not least 
 
-Thanks for reading till the end! 🫡
+Thanks for reading until the end! 🫡
