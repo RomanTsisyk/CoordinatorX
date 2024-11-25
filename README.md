@@ -4,11 +4,9 @@
 
 ## 👋 Getting started
 
-The start contains 3 main steps. As simple as only possible. 
+As simple as only possible. 3 Steps are:
 
-### 1️⃣ Step
-
-Create an enum for steps in a particular flow.
+#### 1️⃣ Create an enum for steps in a particular flow.
 
 ```swift
 enum AppRoute: Route {
@@ -19,10 +17,7 @@ enum AppRoute: Route {
 }
 ```
 
-### 2️⃣ Step
-
-Create Coordinator class for handling steps.
-
+#### 2️⃣ Create Coordinator class for handling steps.
 
 ```swift
 final class AppCoordinator: ViewCoordinator {
@@ -60,9 +55,7 @@ final class AppCoordinator: ViewCoordinator {
 }
 ```
 
-### 3️⃣ Step
-
-Create Flow structure to make Coordinator working:
+#### 3️⃣ Create Flow structure to make Coordinator working:
 
 ```swift
 struct AppFlow: DefaultViewFlow {
@@ -70,7 +63,7 @@ struct AppFlow: DefaultViewFlow {
 }
 ```
 
-### 🏁 Using CoordinatorX from App
+#### 🏁 Using CoordinatorX from App
 
 Just set it up in your App file:
 
@@ -88,15 +81,15 @@ struct CoordinatorX_ExampleApp: App {
 }
 ```
 
-## Important details
+## 🔔 Important details
 
 ### What is Coordinator protocol
 
-Mainly Coordinator protocol contains:
+Coordinator protocol contains:
 
-`var initialRoute: Route` from which route Flow should be started.
+`var initialRoute: Route` from which route a Flow should be started.
 
-`func prepareTransition(for route: RouteType) -> TransitionType` notify Coordinator in which way the view should be appeared.
+`func prepareTransition(for route: RouteType) -> TransitionType` notify Coordinator how to show a view for route.
 
 `func prepareView(for route: RouteType, router: any Router<RouteType>) -> some View` prepare View to be showed.
  
