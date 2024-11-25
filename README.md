@@ -1,4 +1,6 @@
-![CoordinatorX](https://github.com/user-attachments/assets/860d1325-0c9a-4e65-8397-c4a1d174be00)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/860d1325-0c9a-4e65-8397-c4a1d174be00?raw=true" alt="Sublime's custom image"/>
+</p>
 
 ## 👋 Getting started
 
