@@ -6,7 +6,7 @@
 
 As simple as only possible. 3 Steps are:
 
-#### 1️⃣ Create an enum for steps in a particular flow.
+### 1️⃣ Create an enum for steps in a particular flow.
 
 ```swift
 enum AppRoute: Route {
@@ -17,7 +17,7 @@ enum AppRoute: Route {
 }
 ```
 
-#### 2️⃣ Create Coordinator class for handling steps.
+### 2️⃣ Create Coordinator class for handling steps.
 
 ```swift
 final class AppCoordinator: ViewCoordinator {
@@ -55,7 +55,7 @@ final class AppCoordinator: ViewCoordinator {
 }
 ```
 
-#### 3️⃣ Create Flow structure to make Coordinator working:
+### 3️⃣ Create Flow structure to make Coordinator working:
 
 ```swift
 struct AppFlow: DefaultViewFlow {
@@ -63,7 +63,7 @@ struct AppFlow: DefaultViewFlow {
 }
 ```
 
-#### 🏁 Using CoordinatorX from App
+### 🏁 Using CoordinatorX from App
 
 ```swift
 @main
@@ -83,8 +83,6 @@ struct CoordinatorX_ExampleApp: App {
 
 ### What is Coordinator protocol
 
-Coordinator protocol contains:
-
 `var initialRoute: Route` from which route a Flow should be started.
 
 `func prepareTransition(for route: RouteType) -> TransitionType` notify Coordinator how to show a view for route.
@@ -96,8 +94,10 @@ There are 3 types of Coordinators prepared for your app:
 - `RedirectionViewCoordinator`
 - `NavigationCoordinator`
 
+**‼️** Every `fullScreen`, `overlay`, `sheet` has own Context. That means that you can call from them appearing another part of `fullScreen`, `overlay`, `sheet`. And it will be handled by the same `Coordinator`
+
 ### ViewCoordinator
-The Coordinator is to present a single root `View` and the root `View` can be covered with `sheet`, `fullscreen`, `overlay` or replaced by another `View`.\
+It is to present a single root `View` and the root `View` can be covered with `sheet`, `fullscreen`, `overlay` or replaced by another `View`.\
 `ViewCoordinator` supports next `Transition` types:
 ```swift
     case dismiss
@@ -109,7 +109,7 @@ The Coordinator is to present a single root `View` and the root `View` can be co
     case sheet
 ```
 
-Small clarification on `Transation`:\
+`Transition` actions:\
 `dismiss` can be applied to dismiss `fullScreen`, `overlay`, `sheet`\
 `fullScreen` is applied to cover root `View` with modal `View`\
 `none` just do nothing\
@@ -118,17 +118,15 @@ Small clarification on `Transation`:\
 `set` should be applied to replace `View` which is presented as `fullScreen`, `overlay`, `sheet`\
 `sheet` is applied to cover root `View` with sheet `View`
 
-**‼️** Every `fullScreen`, `overlay`, `sheet` has own Context. That means that you can call from them appearing another part of `fullScreen`, `overlay`, `sheet`. And it will be handled by the same `Coordinator`
-
 ### RedirectionViewCoordinator
-The Coordinator is similar to `ViewCoordinator`, but can be understood as children coordinator. It has identical `Transition` types plus one additional:
+It is similar to `ViewCoordinator`, but can be understood as children coordinator. It has identical `Transition` types plus one additional:
 ```swift
     case parent(ParentRouteType)
 ```
 Which is used to triger action on parent flow.
 
 ### NavigationCoordinator
-The Coordinator is to present Navigation Flow. It has identical `Transition` types as `ViewCoordinator` plus few additional:
+It is to present Navigation Flow. It has identical `Transition` types as `ViewCoordinator` plus few additional:
 ```swift
     case pop
     case popToRoot
