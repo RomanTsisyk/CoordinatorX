@@ -65,8 +65,6 @@ struct AppFlow: DefaultViewFlow {
 
 #### 🏁 Using CoordinatorX from App
 
-Just set it up in your App file:
-
 ```swift
 @main
 struct CoordinatorX_ExampleApp: App {
