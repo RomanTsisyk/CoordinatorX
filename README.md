@@ -2,10 +2,13 @@
   <img src="https://github.com/user-attachments/assets/36d67d5c-6122-4134-bacd-67b0a5c78edb?raw=true" alt="CoordinatorX"/>
 </p>
 
-![Static Badge](https://img.shields.io/badge/SPM-ready-green)
-![Static Badge](https://img.shields.io/badge/demo-In_progress-0000FF)
 [![GitHub Release](https://img.shields.io/github/release/edon2005/coordinatorx.svg)](https://github.com/edon2005/coordinatorx/releases)
 ![GitHub License](https://img.shields.io/github/license/edon2005/coordinatorx)
+![Static Badge](https://img.shields.io/badge/iOS-16.0-FF0000)
+![Static Badge](https://img.shields.io/badge/swift_6-ready-green)
+![Static Badge](https://img.shields.io/badge/UI-SwiftUI-green)
+![Static Badge](https://img.shields.io/badge/SPM-ready-green)
+![Static Badge](https://img.shields.io/badge/demo-In_progress-0000FF)
 
 ## 👋 Getting started
 
