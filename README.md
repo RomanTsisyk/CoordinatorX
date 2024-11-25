@@ -8,7 +8,7 @@ The start contains 3 main steps. As simple as only possible.
 
 ### 1️⃣ Step
 
-You need to create an enum for steps in a particular flow.
+Create an enum for steps in a particular flow.
 
 ```swift
 enum AppRoute: Route {
@@ -40,10 +40,6 @@ final class AppCoordinator: ViewCoordinator {
         case .onboarding: .fullScreen
         case .login: .sheet
         case .home: .multiple(.root, .dismiss)
-        .
-        .
-        .
-        .
         }
     }
 
@@ -58,11 +54,7 @@ final class AppCoordinator: ViewCoordinator {
         case .onboarding:
             let coordinator = OnboardingCoordinator(initialRoute: .screen1, parentRouter: router)
             OnboardingFlow(coordinator: coordinator)
-
-        .
-        .
-        .
-        .
+        ....
         }
     }
 }
