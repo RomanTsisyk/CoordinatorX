@@ -4,7 +4,6 @@
 
 [![GitHub Release](https://img.shields.io/github/release/edon2005/coordinatorx.svg)](https://github.com/edon2005/coordinatorx/releases)
 ![Static Badge](https://img.shields.io/badge/platform-iOS_|_macOS-lightgrey)
-![GitHub License](https://img.shields.io/github/license/edon2005/coordinatorx)
 ![Static Badge](https://img.shields.io/badge/iOS-16.0-FF0000)
 ![Static Badge](https://img.shields.io/badge/swift_6-ready-green)
 ![Static Badge](https://img.shields.io/badge/UI-SwiftUI-green)
