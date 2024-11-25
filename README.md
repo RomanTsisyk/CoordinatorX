@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4b57ec1f-fd08-47a3-88bd-07c4652e8ad6?raw=true" alt="CoordinatorX"/>
+  <img src="https://github.com/user-attachments/assets/36d67d5c-6122-4134-bacd-67b0a5c78edb?raw=true" alt="CoordinatorX"/>
 </p>
 
 ## 👋 Getting started
